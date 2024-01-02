@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Login</h1>
+        <form action="./index.php" class="form2">
+            <label for="type1">
+                <input type="text" id="type1" placeholder=" Email" required>
+            </label><br>
+            <div class="hide">
+                <input type="password" id="type2" placeholder="Password" required>
+                <img src="icons8-closed-eye-64.png" id="eyeicon" alt="">
+            </div><br>
+            <h4><a href="#">Forgot Password?</a></h4>
+            <label for="type3">
+                <input type="submit" id="type3" value="Login">
+            </label>
+        </form>
+        <h5>Don't have an account?<a href="./form1.html">Signup</a></h5>
+    </div>
+    <script>
+        let password = document.getElementById("type2");
+        let image = document.getElementById("eyeicon");
+        image.addEventListener("click",function(){
+            if(password.type =="password"){
+                password.type ="text";
+                image.src="icons8-eye-64.png";
+            }else{
+                password.type ="password";
+                image.src="icons8-closed-eye-64.png";
+            }
+        })
+    </script>
+</body>
+</html>
