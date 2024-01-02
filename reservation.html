@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+   <header>
+   <div class="logo">
+      <img src="label-2780146_1280.png" alt="">
+  </div>
+  <div class="fcontainer">
+      <div class="fitem" id="fitem1"><b><a href="/project.html">Home</a></b></div>
+      <div class="fitem" id="fitem2"><b><a href="/about.html">About</a></b></div>
+      <div class="fitem" id="fitem3"><b><a href="/menu.html">Menu</a></b></div>
+      <div class="fitem" id="fitem4"><b><a href="/reservation.html">Booking</a></b></div>
+      <div class="fitem" id="fitem5"><b><a href="/contact.html">Contact</a></b></div>
+  </div>
+   </header>
+    <div class="reserve"><b>BOOK YOUR TABLE NOW</b></div>
+        <form action="/index.php" class="resform">
+            <label for="text1">FULL NAME:</label>
+             <input type="text" id="text1" placeholder="Enter your name" class="input" required onfocus="focusevent1()" onblur="blurevent()">
+             <label for="text2">MOBILE NO:</label>
+             <input type="text" id="text2" placeholder="Enter your phone no" class="input" required onfocus="focusevent2()" onblur="blurevent()">
+             <label for="text3">SELECT DATE:</label>
+             <input type="date" id="text3" placeholder= "dd/mm/yyyy" class="input" required onfocus="focusevent3()" onblur="blurevent()">
+             <label for="text4">SELECT PERSONS:</label>
+             <input type="text" id="text4" placeholder="How many persons" class="input" required onfocus="focusevent4()" onblur="blurevent()">
+             <label for="btn"></label>
+             <input type="submit" value="BOOK NOW" id="btn" class="mybtn">
+        </form>
+    <script>
+         function focusevent1(){
+            document.getElementById("text1").style.background="lightblue";
+         }
+         function focusevent2(){
+            document.getElementById("text2").style.background="orange";
+         }
+         function focusevent3(){
+            document.getElementById("text3").style.background="lightgreen";
+         }
+         function focusevent4(){
+            document.getElementById("text4").style.background="yellow";
+         }
+         function blurevent(){
+            document.getElementById("text1").style.background="white";
+            document.getElementById("text2").style.background="white";
+            document.getElementById("text3").style.background="white";
+            document.getElementById("text4").style.background="white";
+         }
+    </script>
+</body>
+</html>
