@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+    <div class="container1">
+        <h1>Sign up</h1>
+        <form action="index.php" class="form1">
+            <label for="text2"> 
+                <input type="email" id="text2" placeholder="  Enter username" required>
+            </label>
+            <div class="pass">
+                <input type="password" id="text3" placeholder=" Enter your password" required>
+                <img src="icons8-closed-eye-64.png" alt="" id="eyeicon1">
+            </div>
+            <div class="cnpass">
+                <input type="password" id="text4" placeholder=" Enter confirm password" required>
+                <img src="icons8-closed-eye-64.png" alt="" id="eyeicon2">
+            </div><br>
+            <p id="message">demo text </p>
+            <label for="text5">
+                <input type="submit" onclick="checkPassword()" onmouseout="removecontent()" id="text5" value="Sign up">
+            </label>
+        </form>
+        <h5>Already have an account?<a href="./form2.html">Login</a></h5>
+    </div>
+    <script>
+        function checkPassword(){
+            let password = document.getElementById("text3").value;
+            let cnfmpassword = document.getElementById("text4").value;
+            let message = document.getElementById("message");
+            let demo = document.getElementById("text5");
+            if(password.length!=0){
+                if(password!=cnfmpassword){
+                    message.textContent = "Password's don't match";
+                    message.style.color= "red";
+                    demo.type = "button";
+                }
+                else{
+                    demo.type = "submit";
+                }
+            }
+        }
+        function removecontent(){
+            message.style.color = "white";
+        }
+        let pass1 = document.getElementById("text3");
+        let image1 = document.getElementById("eyeicon1");
+        let cnpass1  = document.getElementById("text4");
+        let image2 = document.getElementById("eyeicon2");
+        image1.addEventListener("click",function(){
+            if(pass1.type == "password"){
+                pass1.type = "text";
+                image1.src = "icons8-eye-64.png";
+            }
+            else{
+                pass1.type = "password";
+                image1.src = "icons8-closed-eye-64.png";
+            }
+        })
+        image2.addEventListener("click",function(){
+            if(cnpass1.type == "password"){
+                cnpass1.type = "text";
+                image2.src = "icons8-eye-64.png";
+            }
+            else{
+                cnpass1.type = "password";
+                image2.src = "icons8-closed-eye-64.png";
+            }
+        })
+    </script>
+</body>
+</html>
