@@ -1,0 +1,381 @@
+body{
+    width:100%;
+    height:100vh;
+    background: lightgray;
+}
+.heading{
+    width:26vw;
+    margin: auto;
+    margin-top: 1.4rem;
+    text-align: center;
+}
+ h1{
+    color: burlywood;
+    -webkit-text-stroke: 1.5px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+.container{
+    width:70%;
+    height:70%;
+    padding: 20px;
+    margin: auto;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 10px 10px 6px rgb(146, 136, 136);
+}
+.container .content{
+    width:100%;
+    height:100%;
+    display: flex;
+}
+.container .content .leftside{
+    width:32%;
+    height:100%;
+    position: relative;
+}
+.container .content .right-side{
+    width:75%;
+    height:100%;
+}
+.content .leftside .address-details{
+    margin:16%;
+    color: lightseagreen;
+    transition: 1s ease-in-out;
+}
+.address-details:hover{
+    transform: scale(1.2);
+}
+.content .leftside .phone-details{
+    margin:16%;
+    color: lightseagreen;
+    transition: 1s ease-in-out;
+}
+.phone-details:hover{
+    transform: scale(1.2);
+}
+.content .leftside .email-details{
+    margin: 16%;
+    color: lightseagreen;
+    transition: 1s ease-in-out;
+}
+.email-details:hover{
+    transform: scale(1.2);
+}
+.content .leftside::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 70%;
+    right:-16px;
+    top:40%;
+    background: lightseagreen;
+    transform: translateY(-37%);
+}
+.content .right-side .topic{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 179%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: lightseagreen;
+    -webkit-text-stroke: 1px black;
+}
+#form1{
+    text-align: center;
+    margin-top: 4%;
+}
+.input-box{
+    margin:3%;
+}
+.input-box input{
+    width:75%;
+    outline: auto;
+}
+.input-box textarea{
+    width: 75%;
+    outline:auto;
+}
+.button input{
+    width: 70%;
+    background-color: lightseagreen;
+}
+@media screen and (min-width:990px) and (max-width:1200px){
+    .heading{
+        width:30vw;
+    }
+    h1{
+        font-size: 4.5vw;
+    }
+    .container{
+        width:80%;
+        padding:25px;
+    }
+    .content .leftside .address-details{
+        margin: 18%;
+    }
+    .content .leftside .phone-details{
+        margin: 18%;
+    }
+    .content .leftside .email-details{
+        margin: 18%;
+    }
+    .content .leftside::before{
+        transform:translateY(-44%);
+        right:-5px;
+    }
+    .content .right-side .topic{
+        margin-top: 6%;
+    }
+    #form1{
+        margin-top: 3%;
+    }
+    .input-box input {
+        width: 85%;
+        outline: auto;
+    }
+    .input-box textarea {
+        width: 85%;
+        outline: auto;
+    }
+    .button input{
+        width:80%;
+    }
+}
+@media screen and (max-width:990px){
+    .heading{
+        width:35vw;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    .container{
+        width:75%;
+        padding:25px;
+    }
+    .content  .leftside::before{
+        right:-7%;
+        transform: translateY(-41%);
+    }
+    .content .leftside .address-details{
+        margin:12%;
+        font-size: 14px;
+    }
+    .content .leftside .phone-details{
+        margin:12%;
+        font-size: 14px;
+    }
+    .content .leftside .email-details{
+        margin:12%;
+        font-size: 14px;
+    }
+    .content .right-side .topic{
+        margin-top: 1%;
+    }
+    #form1{
+        margin-top: 3%;
+    }
+    .input-box {
+        margin: 2.5%;
+    }
+    .input-box input{
+        width: 80%;
+    }
+    .input-box textarea{
+        width:80%
+    }
+    .button input{
+        width:75%;
+    }
+}
+@media screen and (max-width:800px){
+    .heading{
+        width:35vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    .container{
+        width: 80%;
+        height:100%;
+        padding: 20px;
+    }
+    .container .content{
+        height:126%;
+        flex-direction: column-reverse;
+    }
+    .container .content .right-side{
+        width: 100%;
+    }
+    .container .content .leftside{
+        width: 100%;
+        display: flex;
+        margin-top:4%;
+    }
+    .content .leftside .address-details{
+        margin: 4%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .leftside .phone-details{
+        margin: 4%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .leftside .email-details{
+        margin: 4%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .leftside::before{
+        display: none;
+    }
+    .content .right-side .topic{
+        margin-top: 1%;
+        font-size: 175%;
+    }
+    #form1{
+        margin-top: 3%;
+    }
+    .input-box {
+        margin: 2.5%;
+    }
+    .input-box input{
+        width: 80%;
+    }
+    .input-box textarea{
+        width:80%
+    }
+    .button input{
+        width:75%;
+    }
+}
+@media screen and (max-width:620px){
+    .heading{
+        width:35vw;
+    }
+    h1{
+        font-size: 6.5vw;
+    }
+    .container{
+        width: 80%;
+        height:120%;
+        padding: 20px;
+    }
+    .container .content{
+        height:137%;
+        flex-direction: column-reverse;
+    }
+    .container .content .right-side{
+        width: 100%;
+        height:70%;
+    }
+    .container .content .leftside{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top:-7%;
+    }
+    .content .leftside .address-details{
+        margin: 4%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .leftside .phone-details{
+        margin: 4%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .leftside .email-details{
+        margin: 4%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .leftside::before{
+        display: none;
+    }
+    .content .right-side .topic{
+        margin-top: 1%;
+        font-size: 165%;
+    }
+    #form1{
+        margin-top: 3%;
+    }
+    .input-box {
+        margin: 2.5%;
+    }
+    .input-box input{
+        width: 90%;
+    }
+    .input-box textarea{
+        width:90%
+    }
+    .button input{
+        width:85%;
+    }
+}
+@media screen and (max-width:425px){
+    .heading{
+        width:40vw;
+    }
+    h1{
+        font-size: 7vw;
+    }
+    .container{
+        width: 80%;
+        height:120%;
+        padding: 20px;
+        margin-left: 2%;
+    }
+    .container .content{
+        height:137%;
+        flex-direction: column-reverse;
+    }
+    .container .content .right-side{
+        width: 100%;
+        height:70%;
+    }
+    .container .content .leftside{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top:-7%;
+    }
+    .content .leftside .address-details{
+        margin: 4%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .leftside .phone-details{
+        margin: 4%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .leftside .email-details{
+        margin: 4%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .leftside::before{
+        display: none;
+    }
+    .content .right-side .topic{
+        margin-top: 0%;
+        font-size: 150%;
+    }
+    #form1{
+        margin-top: 3%;
+    }
+    .input-box {
+        margin: 2.5%;
+    }
+    .input-box input{
+        width: 100%;
+    }
+    .input-box textarea{
+        width:100%
+    }
+    .button input{
+        width:95%;
+    }
+}
