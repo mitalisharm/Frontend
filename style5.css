@@ -1,0 +1,379 @@
+body{
+    background-color: lightgrey;
+}
+.heading h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: burlywood;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+}
+.heading{
+    width: 200px;
+    margin: auto;
+}
+.container{
+    border: 2px solid black;
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-rows:0.2fr 2.3fr 0.2fr 2.3fr 0.2fr 2.3fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0.2rem;
+    grid-template-areas:
+     "item1 item1 item1"
+     "item2 item3 item4"
+     "item5 item5 item5"
+     "item6 item7 item8"
+     "item9 item9 item9"
+     "item10 item11 item12";
+}
+.items{
+    border:1.5px  solid black;
+    background-color: white;
+    text-align: center;
+}
+.item1{
+    background-color: red;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    grid-area: item1;
+}
+.item5{
+    background-color: red;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    grid-area: item5;
+}
+.item9{
+    background-color: red;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    grid-area: item9;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item6{
+    grid-area: item6;
+}
+.item7{
+    grid-area: item7;
+}
+.item8{
+    grid-area: item8;
+}
+.item12{
+    grid-area: item12;
+}
+ .item2 .image1 img{
+    border:2px solid orangered;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    padding:9px;
+    transition: 1s ease-in-out;
+}
+.image1 img:hover{
+    transform: scale(1.1);
+
+}
+.item2 .image1{
+    width:150px;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+}
+ .text1{
+    width:150px;
+    height: 75px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin:auto;
+    position: relative;
+    padding-top:5px;
+    top: -11%;
+    right:2%;
+}
+.item3 .image2 img{
+    border:2px solid orangered;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    padding:9px;
+    transition: 1s ease-in-out;
+}
+.image2 img:hover{
+    transform: scale(1.1);
+
+}
+.item3 .image2{
+    width:150px;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+}
+.text2{
+    width:190px;
+    height: 75px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin:auto;
+    position: relative;
+    padding-top:5px;
+    top: -11%;
+    right:2%;
+}
+.item4 .image3 img{
+    border:2px solid orangered;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    padding:9px;
+    transition: 1s ease-in-out;
+}
+.image3 img:hover{
+    transform: scale(1.1);
+}
+.item4 .image3{
+    width:150px;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+}
+.text3{
+    width:190px;
+    height: 75px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin:auto;
+    position: relative;
+    padding-top:5px;
+    top: -11%;
+    right:2%;
+}
+.item6 .image4 img{
+    border:2px solid orangered;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    padding:9px;
+    transition: 1s ease-in-out;
+}
+.image4 img:hover{
+    transform: scale(1.1);
+}
+.item6 .image4{
+    width:150px;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+}
+.text4{
+    width:190px;
+    height: 75px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin:auto;
+    position: relative;
+    padding-top:5px;
+    top: -11%;
+    right:2%;
+}
+.item7 .image5 img{
+    border:2px solid orangered;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    padding:9px;
+    transition: 1s ease-in-out;
+}
+.image5 img:hover{
+    transform: scale(1.1);
+}
+.item7 .image5{
+    width:150px;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+}
+.text5{
+    width:190px;
+    height: 75px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin:auto;
+    position: relative;
+    padding-top:5px;
+    top: -11%;
+    right:2%;
+}
+.item8 .image6 img{
+    border:2px solid orangered;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    padding:9px;
+    transition: 1s ease-in-out;
+}
+.image6 img:hover{
+    transform: scale(1.1);
+}
+.item8 .image6{
+    width:150px;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+}
+.text6{
+    width:190px;
+    height: 75px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin:auto;
+    position: relative;
+    padding-top:5px;
+    top: -11%;
+    right:2%;
+}
+.item10 .image7 img{
+    border:2px solid orangered;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    padding:9px;
+    transition: 1s ease-in-out;
+}
+.image7 img:hover{
+    transform: scale(1.1);
+}
+.item10 .image7{
+    width:150px;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+}
+.text7{
+    width:190px;
+    height: 75px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin:auto;
+    position: relative;
+    padding-top:5px;
+    top: -11%;
+    right:2%;
+}
+.item11 .image8 img{
+    border:2px solid orangered;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    padding:9px;
+    transition: 1s ease-in-out;
+}
+.image8 img:hover{
+    transform: scale(1.1);
+}
+.item11 .image8{
+    width:150px;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+}
+.text8{
+    width:190px;
+    height: 75px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin:auto;
+    position: relative;
+    padding-top:5px;
+    top: -11%;
+    right:2%;
+}
+.item12 .image9 img{
+    border:2px solid orangered;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    padding:9px;
+    transition: 1s ease-in-out;
+}
+.image9 img:hover{
+    transform: scale(1.1);
+}
+.item12 .image9{
+    width:150px;
+    padding:20px;
+    text-align:center;
+    margin: auto;
+}
+.text9{
+    width:190px;
+    height: 75px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin:auto;
+    position: relative;
+    padding-top:5px;
+    top: -11%;
+    right:2%;
+}
+@media screen and (min-width:481px) and (max-width:650px){
+    .container{
+        grid-template-rows: 0.2fr 2.2fr 2.2fr 0.2fr 2.2fr 2.2fr 0.2fr 2.2fr 2.2fr;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-areas: 
+        "item1 item1"
+        "item2 item3"
+        "item4 item4"
+        "item5 item5"
+        "item6 item7"
+        "item8 item8"
+        "item9 item9"
+        "item10 item11"
+        "item12 item12"
+        ;
+    }
+}
+/*for smaller devices smartphones*/
+@media screen and (max-width:480px){
+    .container{
+        width:95vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 2.2fr 2.2fr 2.2fr 0.2fr 2.2fr 2.2fr 2.2fr 0.2fr 2.2fr 2.2fr 2.2fr;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8"
+        "item9"
+        "item10"
+        "item11"
+        "item12";
+    }
+}
